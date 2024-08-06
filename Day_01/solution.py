@@ -20,4 +20,4 @@ for i in list(data):
     else:
         break
 
-sp("Santa's position when he first enter to basement was:", result)
+sp("Santa's position when he first enter to basement was:", step-1)
