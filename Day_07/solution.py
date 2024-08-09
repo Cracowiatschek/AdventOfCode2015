@@ -115,3 +115,4 @@ def read_and_process(operations):
 
 solution_part_one = read_and_process(operations_map)
 sp("Signal provided to wire 'a' is: ", solution_part_one['a'])
+
