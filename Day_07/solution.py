@@ -1,3 +1,4 @@
+from solutionPrinter import solution_println as sp
 data = open("input.in", 'r').read().split("\n")
 sample = open("sample.in", 'r').read().split("\n")
 
@@ -12,107 +13,105 @@ def int_or_str(x):
 
 def processor(input_x, input_y, operator):
     if operator == "&":
-        return input_x & input_y
+        x_resolution = (input_x & input_y) & 0xFFFF
+        return x_resolution
     elif operator == "|":
-        return input_x | input_y
+        x_resolution = (input_x | input_y) & 0xFFFF
+        return x_resolution
     elif operator == "<<":
-        return input_x << input_y
+        x_resolution = (input_x << input_y) & 0xFFFF
+        return x_resolution
     elif operator == ">>":
-        return input_x >> input_y
+        x_resolution = (input_x >> input_y) & 0xFFFF
+        return x_resolution
     elif operator == "~":
-        return ~input_x
+        x_resolution = (~input_x) & 0xFFFF
+        return x_resolution
     else:
-        return input_x
+        x_resolution = input_x
+        return x_resolution
 
 
-mapping = {}
-test = []
-for i in data:
-    source, target = i.split("->")[0], i.split("->")[1].replace(' ', '')
-    if "AND" in source:
-        x = int_or_str(source.split(" ")[0])
-        y = int_or_str(source.split(" ")[2])
-        mapping[target] = [x, "&", y]
-    elif "OR" in source:
-        x = int_or_str(source.split(" ")[0])
-        y = int_or_str(source.split(" ")[2])
-        mapping[target] = [x, "|", y]
-    elif "LSHIFT" in source:
-        x = int_or_str(source.split(" ")[0])
-        y = int_or_str(source.split(" ")[2])
-        mapping[target] = [x, "<<", y]
-    elif "RSHIFT" in source:
-        x = int_or_str(source.split(" ")[0])
-        y = int_or_str(source.split(" ")[2])
-        mapping[target] = [x, ">>", y]
-    elif "NOT" in source:
-        x = int_or_str(source.split(" ")[1])
-        mapping[target] = [x, "~"]
-    else:
-        x = int_or_str(source.split(" ")[0])
-        mapping[target] = x
+def parser(dataset):
+    mapping = {}
 
-research = {}
-cache = []
-locks = []
+    for i in data:
+        source, target = i.split("->")[0], i.split("->")[1].replace(' ', '')
+        if "AND" in source:
+            x = int_or_str(source.split(" ")[0])
+            y = int_or_str(source.split(" ")[2])
+            mapping[target] = [x, "&", y]
+        elif "OR" in source:
+            x = int_or_str(source.split(" ")[0])
+            y = int_or_str(source.split(" ")[2])
+            mapping[target] = [x, "|", y]
+        elif "LSHIFT" in source:
+            x = int_or_str(source.split(" ")[0])
+            y = int_or_str(source.split(" ")[2])
+            mapping[target] = [x, "<<", y]
+        elif "RSHIFT" in source:
+            x = int_or_str(source.split(" ")[0])
+            y = int_or_str(source.split(" ")[2])
+            mapping[target] = [x, ">>", y]
+        elif "NOT" in source:
+            x = int_or_str(source.split(" ")[1])
+            mapping[target] = [x, "~"]
+        else:
+            x = int_or_str(source.split(" ")[0])
+            mapping[target] = x
 
-for i in mapping:
-    try:
-        len(mapping[i])
-        continue
-    except TypeError:
-        research[i] = mapping[i]
+    return mapping
 
-print(mapping)
-while len(research) != len(mapping):
 
-    for i in research:
-        input_x = research[i]
-        if i not in research or i not in locks:
-            for j in mapping:
-                input_y = ''
-                operator = ''
+operations_map = parser(data)
 
-                try:
-                    if len(mapping[j]) == 2:  # get NOT
-                        input_y = int_or_str(mapping[j][0])
-                        operator = mapping[j][1]
-                    else:
-                        operator = mapping[j][1]
-                        input_y = int_or_str(mapping[j][2])
-                except TypeError:
-                    continue
 
-                if type(input_y) is int:
-                    x = processor(input_x, input_y, operator)
-                    locks.append(j)
-                    cache.append([j, x])
-                elif input_y in research:
-                    input_y = research[input_y]
-                    x = processor(input_x, input_y, operator)
-                    locks.append(j)
-                    cache.append([j, x])
-                else:
-                    continue
-    for i in cache:
-        research[i[0]] = i[1]
-    print(research)
+def read_and_process(operations):
+    result = {}
 
-print(len(research))
-print(research['a'])
+    while 'a' not in result:
 
-    #         if type(is_int(j))==int:
-    #             research[i] = mapping[i]
-    # if len(research) >= 2:
-    #     print(research)
-    #     start = "0"
+        for y in operations:
+            if y not in result:
+                get_value = operations[y]
+                if type(get_value) is int: # starter
+                    result[y] = get_value
+                if type(get_value) is str and get_value in result:  # simple send node a to node b
+                    search_value = result[get_value]
+                    if type(search_value) is int:
+                        result[y] = search_value
+                if type(get_value) is list:
+                    m = get_value[0]
+                    oper = get_value[1]
 
-    # if is_int_bool(x):
-    #     research[j] = research[i] + x
-    #     continue
-    # elif x in research:
-    #     research[j] = research[i] + research[x]
-    #     continue
-    # else:
-    #     cache[j] = mapping[j]
-    #     continue
+                    if len(get_value) == 2 and m in result:  # NOT
+                        search_m = result[m]
+                        x = processor(search_m, 0, oper)
+                        result[y] = x
+                    elif len(get_value) == 2 and m not in result:
+                        continue
+                    elif len(get_value) == 3:
+                        n = get_value[2]
+                        if m in result or n in result:  # if something is in result
+                            if m in result and n in result:  # if a and b in result
+                                search_m = result[m]
+                                search_n = result[n]
+                                x = processor(search_m, search_n, oper)
+                                result[y] = x
+                            elif type(m) is int:  # if only b in result
+                                search_n = result[n]
+                                x = processor(m, search_n, oper)
+                                result[y] = x
+                            elif type(n) is int:  # if only a in result
+                                search_m = result[m]
+                                x = processor(search_m, n, oper)
+                                result[y] = x
+                            else:
+                                continue
+                        else:
+                            continue
+    return result
+
+
+solution_part_one = read_and_process(operations_map)
+sp("Signal provided to wire 'a' is: ", solution_part_one['a'])

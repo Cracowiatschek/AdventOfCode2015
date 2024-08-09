@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be088dbf-be7f-45fe-9771-a99e020395d3" name="Changes" comment="Puzzels resolved to 5th day :)">
-      <change afterPath="$PROJECT_DIR$/Day_06/input.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day_06/solution.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day_07/input.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day_07/s1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day_07/sample.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day_07/solution.py" afterDir="false" />
+    <list default="true" id="be088dbf-be7f-45fe-9771-a99e020395d3" name="Changes" comment="6th fck day">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day_05/solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day_05/solution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day_07/solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day_07/solution.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,13 +53,13 @@
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "settings.editor.selected.configurable": "preferences.updates"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-975db3bf15a3-31b6be0877a2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.18034.82" />
+        <option value="bundled-python-sdk-f5635417b835-31b6be0877a2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.18968.29" />
       </set>
     </attachedChunks>
   </component>
@@ -94,7 +88,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722949441380</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="6th fck day">
+      <option name="closed" value="true" />
+      <created>1723143813035</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1723143813037</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +113,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1st day solved.&#10;&#10;create solution printer" />
     <MESSAGE value="Puzzels resolved to 5th day :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Puzzels resolved to 5th day :)" />
+    <MESSAGE value="6th fck day" />
+    <option name="LAST_COMMIT_MESSAGE" value="6th fck day" />
   </component>
 </project>
