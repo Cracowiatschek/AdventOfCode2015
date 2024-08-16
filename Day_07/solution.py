@@ -35,7 +35,7 @@ def processor(input_x, input_y, operator):
 def parser(dataset):
     mapping = {}
 
-    for i in data:
+    for i in dataset:
         source, target = i.split("->")[0], i.split("->")[1].replace(' ', '')
         if "AND" in source:
             x = int_or_str(source.split(" ")[0])
@@ -102,7 +102,7 @@ def read_and_process(operations):
                                 search_n = result[n]
                                 x = processor(m, search_n, oper)
                                 result[y] = x
-                            elif type(n) is int:  # if only a in result
+                            elif type(n) is int:  # if only an in result
                                 search_m = result[m]
                                 x = processor(search_m, n, oper)
                                 result[y] = x
