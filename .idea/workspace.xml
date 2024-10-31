@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be088dbf-be7f-45fe-9771-a99e020395d3" name="Changes" comment="9th day done, I need come back to 7 th part II">
-      <change afterPath="$PROJECT_DIR$/Day_10/solution.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day_11/solution.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day_12/input.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day_12/solution.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day_13/input.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day_13/sample.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day_13/solution.py" afterDir="false" />
+    <list default="true" id="be088dbf-be7f-45fe-9771-a99e020395d3" name="Changes" comment="13th Day complete">
+      <change afterPath="$PROJECT_DIR$/Day_14/input.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day_14/sample.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day_14/solution.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723842705107</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="13th Day complete">
+      <option name="closed" value="true" />
+      <created>1730413008698</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1730413008698</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +158,7 @@
     <MESSAGE value="6th fck day" />
     <MESSAGE value="7th day in progress" />
     <MESSAGE value="9th day done, I need come back to 7 th part II" />
-    <option name="LAST_COMMIT_MESSAGE" value="9th day done, I need come back to 7 th part II" />
+    <MESSAGE value="13th Day complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="13th Day complete" />
   </component>
 </project>
