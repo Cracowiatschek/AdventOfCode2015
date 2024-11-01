@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be088dbf-be7f-45fe-9771-a99e020395d3" name="Changes" comment="13th Day complete">
-      <change afterPath="$PROJECT_DIR$/Day_14/input.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day_14/sample.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day_14/solution.py" afterDir="false" />
+    <list default="true" id="be088dbf-be7f-45fe-9771-a99e020395d3" name="Changes" comment="14th Day one star">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day_14/solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day_14/solution.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730413008698</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="14th Day one star">
+      <option name="closed" value="true" />
+      <created>1730415785525</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1730415785525</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,6 +165,7 @@
     <MESSAGE value="7th day in progress" />
     <MESSAGE value="9th day done, I need come back to 7 th part II" />
     <MESSAGE value="13th Day complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="13th Day complete" />
+    <MESSAGE value="14th Day one star" />
+    <option name="LAST_COMMIT_MESSAGE" value="14th Day one star" />
   </component>
 </project>
