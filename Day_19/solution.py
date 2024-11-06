@@ -23,6 +23,7 @@ def replacements(output_text, idx_to_repl, base_text):
 
 x = []
 n = 0
+
 for i in configuration[0]:
     setting = configuration[0][i]
     input_value = setting["input_value"]
