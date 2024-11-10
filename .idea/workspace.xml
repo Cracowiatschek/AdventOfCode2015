@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be088dbf-be7f-45fe-9771-a99e020395d3" name="Changes" comment="fck 19th">
+    <list default="true" id="be088dbf-be7f-45fe-9771-a99e020395d3" name="Changes" comment="20 th">
+      <change afterPath="$PROJECT_DIR$/Day_21/input.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day_21/solution.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day_19/solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day_19/solution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day_20/solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day_20/solution.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730909514560</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="20 th">
+      <option name="closed" value="true" />
+      <created>1731223164295</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1731223164295</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,6 +217,7 @@
     <MESSAGE value="14th Day completed" />
     <MESSAGE value="Solved 15,16,17,18 days :)" />
     <MESSAGE value="fck 19th" />
-    <option name="LAST_COMMIT_MESSAGE" value="fck 19th" />
+    <MESSAGE value="20 th" />
+    <option name="LAST_COMMIT_MESSAGE" value="20 th" />
   </component>
 </project>
